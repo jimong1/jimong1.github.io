@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> C반 20210932 배지원 12주차 과제 </title>
+	<style type="text/css">
+		    
+		header { width: 1800px; height: 70px; margin: 20px; border: solid 5px black ; border-radius: 5%; }
+		 aside { width: 300px; height: 620px; float: left; margin: 19px; padding: 2px; border:solid 0px black; } 
+		   nav { height: 450px; margin: 5px; margin-top:20px; border:solid 0px black; }
+		nav iframe { border-radius: 40%; border: solid 5px black; border-color: lightgreen; }   
+		  main { width: 1450px; height: 620px; float: left; margin: 20px; border:solid 0px black; background-color: #fffaf0; }
+		  #se1 { width: 900px; height: 500px; float: left; margin: 30px; border:solid 0px black; }
+		  #se2 { width: 450px; height: 600px; float: left; margin: 5px 5px; border-radius: 10px; border: solid 5px black; border-color: skyblue;   } 
+		footer { width:1750px; height: 100px; float: left; margin: 20px; border:solid dashed 1px black; background-color: #d3d3d3; }
+          #if1 { width: 900px; height: 500px; border:solid 0px black; }
+          #if2 { width: 450px; height: 600px; border:solid 0px black; } 
+          body { background-color: #fffff0; }
+          #hit { width:280px; height: 120px; border:solid 0px black;  }
+         #hit1 { border:solid 0px black; }
+    footer div { float: right; margin-top:50px;}         
+        #logo1 { width: 70px; height: 70px; } 
+        #logo2 { width: 180px; height: 70px; }       
+          span { padding-top: 0px; margin-left: 100px; }
+            ul { float:right; }
+         ul li { list-style-type: none; display: inline; border-right: 1px solid black ; margin-right: 10px; border-right: 0px black solid ;}
+         #tel { margin-right: 100px; }
+
+
+       #tel1 { width: 45px; height: 45px; background: url('img/tel.jpg') center center  / 100% no-repeat; 
+              animation: watch 0.6s linear infinite both;
+              }
+
+
+
+         @keyframes watch {
+         	   0% { transform: translate(0); }
+         	   20% { transform: translate(-2px,-2px); }
+         	   40% { transform: translate(-2px,-2px); }
+         	   60% { transform: translate(2px,2px); }
+         	   80% { transform: translate(2px,-2px); }
+         	   100% { transform: translate(0); }
+         }
+         
+
+
+    
+
+   .login { transform: translate(-50%,-50%); }
+   .login li { transition: all .4s; }
+   .login li a { transition: all.3s; }
+   .login:hover li { transform: scale(0.7) ; filter: blur(7px); }
+   .login li:hover {transform: scale(0.7); filter: blur(0);}
+   .login li:hover a { font-weight: bold;  }
+         
+
+	</style>
+</head>
+<body>
+<header>
+	 <a href="index.html"> <img src="img/logo1.jpg" id='logo1'> </a>
+	 <a href="index.html"> <img src="img/title.jpg" id='logo2'> </a>
+	 <ul class='login'> 
+       <a href="login.html"> <li class="menu"> 로그인</li> </a>
+       <a href="id.html"> <li class="menu"> 회원가입</li> </a>
+        <li> 마이페이지  </li> 
+        <li id='go'> 고객센터    </li> 
+	 </ul>
+</header>
+
+<aside>
+	 <div id='hit1'> <img id='hit'src="img/hit.jpg"> </div>
+	<nav> 
+       <iframe src="list1.html" width='270px' height="440px" > </iframe>
+	</nav>
+</aside>
+
+<main> 
+	<section id='se1'> <iframe id='if1' src="section1.html" name="a"> </iframe> </section>
+	<section id='se2'> <iframe id='if2' src="mv1.html" name="b">  </iframe> </section>
+</main>
+
+<footer> &nbsp;&nbsp;&nbsp;&nbsp;copyright &copy; jiwon  <div id="tel1">   </div> <div id="tel2"> 문의번호 : 000-000-1111&nbsp;&nbsp;&nbsp; </div> </footer>
+</body>
+</html>
